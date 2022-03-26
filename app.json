@@ -1,48 +1,68 @@
 {
-    "name": "String Session Generator By @Gishankrishka1",
-    "description": "Telegram bot to generate Pyrogram StringSession",
-    "logo": "https://telegra.ph/file/bdd98dfacb8f62ed23319.jpg",
+    "name": "",
+    "description": "",
+    "logo": "",
     "keywords": [
-        "telegram",
-        "channel",
-        "messages",
-        "search",
-        "bot"
-    ],
-    "repository": "https://github.com/TeamAlphaTg/Session_gen_bot",
-    "success_url": "https://t.me/Pyro_SessionGen_bot",
-    "env": {
-        "API_ID": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
-    },
+{
+  "name": "String Session Generator By @Gishankrishka1",
+  "description": "Telegram bot to generate Pyrogram StringSession",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "scalpel"
+  ],
+  "website": "https://small-sharp-tool.com/",
+  "repository": "https://github.com/TeamAlphaTg/Session_gen_bot",
+  "logo": "https://telegra.ph/file/bdd98dfacb8f62ed23319.jpg",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
   "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org or @TeleORG_Bot",
+      "value": ""
     },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org or @TeleORG_Bot",
+      "value": ""
     },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-    },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
+      "BOT_TOKEN": {
+      "description": "Get this from @BotFather",
+      "value": ""
     }
-    },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
     }
+  },
+  "image": "heroku/ruby",
+  "addons": [
+    "openredis",
+    {
+      "plan": "mongolab:shared-single-small",
+      "as": "MONGO"
+    },
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
+    }
+  }
 }
 © 2022 GitHub, Inc.
