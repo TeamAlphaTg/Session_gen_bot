@@ -70,11 +70,11 @@ Language : [Python]
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+G3Cfhfa1aW0zODI9'),
+                InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+xKOF9u8ybDo1OTQ1'),
                 InlineKeyboardButton('✨✨ Devs✨✨ ', url='https://github.com/AlphaTeamTg')
             ],
             [
-                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='{MY_CHANNEL_LINK}'),
+                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
             ]
         ]
     )
@@ -180,7 +180,7 @@ async def genStr(_, msg: Message):
         return
     try:
         session_string = await client.export_session_string()
-        await client.send_message("me", f"#PYRO #STRING_SESSION \n\n```{session_string}``` \n\nBy [@Gishankrishka_Sessionget_Bot](https://t.me/Gishankrishka_Sessionget_Bot) \nA Powerful Bot by **@Gishankrishka1_cloud**")
+        await client.send_message("me", f"#PYRO #STRING_SESSION \n\n```{session_string}``` \n\nBy [@{BOT_USERNAME}](https://t.me/Gishankrishka_Sessionget_Bot) \nA Powerful Bot by **@Gishankrishka1_cloud**")
         await client.disconnect()
         
         print(session_string)
@@ -216,11 +216,11 @@ Language : [Python](www.python.org)
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+G3Cfhfa1aW0zODI9'),
+                InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+xKOF9u8ybDo1OTQ1'),
                 InlineKeyboardButton('✨✨ Dev✨✨ ', url='https://t.me/+FeTrYYa0dRlmMDFl')
             ],
             [
-                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Gishankrishka1_cloud'),
+                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
             ]
         ]
     )
