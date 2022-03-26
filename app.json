@@ -1,9 +1,4 @@
 {
-    "name": "",
-    "description": "",
-    "logo": "",
-    "keywords": [
-{
   "name": "String Session Generator By @Gishankrishka1",
   "description": "Telegram bot to generate Pyrogram StringSession",
   "keywords": [
