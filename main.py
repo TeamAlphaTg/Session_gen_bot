@@ -21,6 +21,8 @@ from pyromod import listen
 API_ID = int(os.environ.get("API_ID", 0))
 API_HASH = os.environ.get("API_HASH", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+MY_CHANNEL = os.environ.get("MY_CHANNEL", None)
+MY_CHANNEL_LINK = os.environ.get("MY_CHANNEL_LINK", None)
 
 __all__ = ["logging"]
 
@@ -53,11 +55,11 @@ PHONE_NUMBER_TEXT = (
 @bot.on_message(filters.private & filters.command("start"))
 async def restart(_, msg: Message):
     out = f"""Send /gen to Start your Process. 
-You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by ||@Gishankrishka1_cloud||**
+You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by ||MY_CHANNEL||**
 A telegram bot to generate pyrogram and telethon string session...
 [Pyrogram]
 Language : [Python]
-            **Regarding ~ **[: 𝙰𝙻𝙿𝙷𝙰 么 ™](t.me/alpha_network)
+            **Regarding ~** MY_CHANNEL **
             
              🥀All Commands🥀
  🥀/gen - Start Gen Sessions
@@ -72,7 +74,7 @@ Language : [Python]
                 InlineKeyboardButton('✨✨ Devs✨✨ ', url='https://github.com/AlphaTeamTg')
             ],
             [
-                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
+                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='MY_CHANNEL_LINK'),
             ]
         ]
     )
