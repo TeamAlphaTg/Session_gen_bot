@@ -17,6 +17,10 @@
 
     },
     "MY_CHANNEL_LINK": {
+      "description": "Bot User Name Without @ ",
+      "value": "Pyro_SessionGen_bot"
+    },
+    "MY_CHANNEL_LINK": {
       "description": "Ur Channel User Name",
       "value": "https://t.me/Alphanetwork"
     },
