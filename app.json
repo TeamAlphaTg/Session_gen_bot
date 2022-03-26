@@ -1,51 +1,37 @@
 {
-  "name": "String Session Generator",
-  "description": "Telegram bot to generate Pyrogram & Telethon StringSession Made By Gishan Krishka(@gishankrishka2) & Tharusha Kalum(@tharushakalum)",
-  "logo": "https://telegra.ph/file/bdd98dfacb8f62ed23319.jpg",
-  "keywords": [
-    "telegram",
-    "bot",
-    "python",
-    "pyrogram"
-  ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
+    "name": "String Session Generator By @Gishankrishka1",
+    "description": "Telegram bot to generate Pyrogram StringSession",
+    "logo": "https://telegra.ph/file/bdd98dfacb8f62ed23319.jpg",
+    "keywords": [
+        "telegram",
+        "channel",
+        "messages",
+        "search",
+        "bot"
+    ],
+    "repository": "https://github.com/TeamAlphaTg/Session_gen_bot",
+    "success_url": "https://t.me/Pyro_SessionGen_bot",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },  
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-  "repository": "https://github.com/Gishankrishka2/session-gen",
-  "env": {
-    "ENVIRONMENT": {
-      "description": "Don't change ANYTHING.",
-      "required": true,
-      "value": "ANYTHING"
-    },
-    "API_ID": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    }
-  }
 }
+© 2022 GitHub, Inc.
