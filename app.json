@@ -14,6 +14,15 @@
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
+
+    },
+    "MY_CHANNEL_LINK": {
+      "description": "Ur Channel User Name",
+      "value": "https://t.me/Alphanetwork"
+    },
+    "MY_CHANNEL": {
+      "description": "Ur Channel User Name",
+      "value": "@Alphanetwork"
     },
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
