@@ -16,7 +16,11 @@
       "value": "ANYTHING"
 
     },
-    "MY_CHANNEL_LINK": {
+    "CHANNEL_NAME": {
+      "description": "Ur Channel Name ",
+      "value": "┊𝙰𝙻𝙿𝙷𝙰 么 ™"
+    },
+    "BOT_USERNAME": {
       "description": "Bot User Name Without @ ",
       "value": "Pyro_SessionGen_bot"
     },
