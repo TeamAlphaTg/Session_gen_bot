@@ -55,11 +55,11 @@ PHONE_NUMBER_TEXT = (
 @bot.on_message(filters.private & filters.command("start"))
 async def restart(_, msg: Message):
     out = f"""Send /gen to Start your Process. 
-You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by ||MY_CHANNEL||**
+You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by ||{MY_CHANNEL}||**
 A telegram bot to generate pyrogram and telethon string session...
 [Pyrogram]
 Language : [Python]
-            **Regarding ~** MY_CHANNEL **
+            **Regarding ~****[: 𝙰𝙻𝙿𝙷𝙰 么 ™](t.me/alpha_network)**
             
              🥀All Commands🥀
  🥀/gen - Start Gen Sessions
