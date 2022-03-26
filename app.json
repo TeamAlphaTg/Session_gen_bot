@@ -1,46 +1,44 @@
-{
+    {
   "name": "String Session Generator By ༒❣️☢️╣IrØή❂mคŇ╠☢️❣️༒",
-  "description": "Telegram bot to generate Pyrogram StringSession Made By LegendBoy(@LegendBoy_XD)",
-  "logo": "https://telegra.ph/file/bdd98dfacb8f62ed23319.jpg",
+  "description": "Telegram bot to generate Pyrogram StringSession",
   "keywords": [
     "telegram",
-    "bot",
-    "python",
-    "pyrogram"
+    "best",
+    "string",
+    "generator"
   ],
-    "buildpacks": [{
+  "success_url": "https://telegram.dog/Pyro_SessionGen_bot",
+  "website": "https://github.com/TeamAlphaTg/Session_gen_bot/",
+  "repository": "https://github.com/TeamAlphaTg/Session_gen_bot/",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
     "url": "heroku/python"
   }],
   "formation": {
     "worker": {
       "quantity": 1,
       "size": "free"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-  "repository": "https://github.com/TeamAlphaTg/Session_gen_bot",
-  "env": {
-    "API_ID": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
     }
   }
 }
