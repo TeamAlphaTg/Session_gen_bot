@@ -59,7 +59,7 @@ You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by
 A telegram bot to generate pyrogram and telethon string session...
 [Pyrogram]
 Language : [Python]
-            **Regarding ~****[: 𝙰𝙻𝙿𝙷𝙰 么 ™](t.me/alpha_network)**
+            [**Regarding ~**]({MY_CHANNEL_LINK})**
             
              🥀All Commands🥀
  🥀/gen - Start Gen Sessions
@@ -74,7 +74,7 @@ Language : [Python]
                 InlineKeyboardButton('✨✨ Devs✨✨ ', url='https://github.com/AlphaTeamTg')
             ],
             [
-                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='MY_CHANNEL_LINK'),
+                InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='{MY_CHANNEL_LINK}'),
             ]
         ]
     )
