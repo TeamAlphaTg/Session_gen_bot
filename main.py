@@ -23,6 +23,8 @@ API_HASH = os.environ.get("API_HASH", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 MY_CHANNEL = os.environ.get("MY_CHANNEL", None)
 MY_CHANNEL_LINK = os.environ.get("MY_CHANNEL_LINK", None)
+CHANNEL_NAME = os.environ.get("CHANNEL_NAME", None)
+BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 
 __all__ = ["logging"]
 
@@ -59,7 +61,7 @@ You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by
 A telegram bot to generate pyrogram and telethon string session...
 [Pyrogram]
 Language : [Python]
-            [**Regarding ~**]({MY_CHANNEL_LINK})**
+            **Regarding ~**[{CHANNEL_NAME}]({MY_CHANNEL_LINK})**
             
              🥀All Commands🥀
  🥀/gen - Start Gen Sessions
@@ -211,13 +213,13 @@ You must Join My Updates Channel for Updates! **Hosted and Maintained with ?? by
 A telegram bot to generate pyrogram and telethon string session...
 [Pyrogram](docs.pyrogram.org)
 Language : [Python](www.python.org)
-            **Regarding ~ **[: 𝙰𝙻𝙿𝙷𝙰 么 ™](t.me/alpha_network)
+            **Regarding ~**[{CHANNEL_NAME}]({MY_CHANNEL_LINK})**
 """
     reply_markup = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+xKOF9u8ybDo1OTQ1'),
-                InlineKeyboardButton('✨✨ Dev✨✨ ', url='https://t.me/+FeTrYYa0dRlmMDFl')
+                InlineKeyboardButton('✨✨ Dev✨✨ ', url='')
             ],
             [
                 InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
