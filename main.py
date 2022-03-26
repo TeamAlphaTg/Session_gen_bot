@@ -73,7 +73,7 @@ Language : [Python]
         [
             [
                 InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+xKOF9u8ybDo1OTQ1'),
-                InlineKeyboardButton('✨✨ Devs✨✨ ', url='https://github.com/AlphaTeamTg')
+                InlineKeyboardButton('✨✨ Devs✨✨ ', url='https://t.me/Alpha_Devs/5')
             ],
             [
                 InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
@@ -219,7 +219,7 @@ Language : [Python](www.python.org)
         [
             [
                 InlineKeyboardButton('✨✨Support Group✨✨', url='https://t.me/+xKOF9u8ybDo1OTQ1'),
-                InlineKeyboardButton('✨✨ Dev✨✨ ', url='')
+                InlineKeyboardButton('✨✨ Dev✨✨ ', url='https://t.me/Alpha_Devs/5')
             ],
             [
                 InlineKeyboardButton('✨✨ Bot Channel ✨✨', url='https://t.me/Alpha_network'),
